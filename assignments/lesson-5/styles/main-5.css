@@ -1,0 +1,164 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 8px;
+    border: solid 1px gray;
+}
+
+header {
+    background-color: #6ac6f9;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header img {
+    float: left;
+}
+
+header .subheading {}
+
+.logo .large {
+    display: none;
+}
+
+nav {
+    max-width: 767px;
+    margin: 0 auto;
+    clear: both;
+}
+
+nav button {}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #636154;
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #ffb748;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+    color: white;
+}
+
+main {}
+
+main h1 {
+    color: black;
+    font-size: 24px;
+}
+
+main h2 {
+    color: #f0341f;
+    font-size: 20px;
+}
+
+main h3 {
+    color: #ffb748;
+    font-size: 16px;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: .8rem;
+}
+
+picture {
+    display: block;
+    margin: 0 auto;
+}
+
+.highlow,
+.current,
+.conditions {
+    display: block;
+    margin: 0 auto;
+}
+
+.forecast {
+    display: none;
+}
+
+table {
+    margin: 0 auto;
+}
+
+th {
+    padding: 8px;
+    border: solid .5px lightgray;
+}
+
+td {
+    padding: 8px;
+    border: solid .5px lightgray;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%
+    /* fill the page in the small/phone view */
+    margin: 10px;
+}
+
+.town-article {
+    overflow: hidden;
+}
+
+footer {
+    background-color: #636154;
+    color: white;
+}
+
+footer aside {}
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
