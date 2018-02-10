@@ -155,7 +155,9 @@ footer {
     color: white;
 }
 
-footer aside {}
+footer aside {
+    text-decoration: none;
+}
 
 footer > p {}
 
