@@ -7,7 +7,7 @@
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    font-family: "Open Sans";
     font-size: 12px;
     /* Declare the base font-family - from google font api or other */
 }
