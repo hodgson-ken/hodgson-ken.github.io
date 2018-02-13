@@ -104,21 +104,34 @@ main figure img {
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;*/
     font-size: .8rem;
 }
 
+.gridify {
+    display: grid;
+    max-width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    border: .5px lightgray solid;
+}
+
 picture {
-    display: block;
+    display: inline;
     margin: 0 auto;
 }
 
 .highlow,
 .current,
 .conditions {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.current p {
+    text-decoration: underline;
 }
 
 .forecast {
@@ -153,13 +166,16 @@ article p.town-article img {
 footer {
     background-color: #636154;
     color: white;
+    text-align: center;
 }
 
 footer aside {
     text-decoration: none;
 }
 
-footer > p {}
+footer > p {
+    
+}
 
 /* This structure refers to p elements that are direct children of the footer element */
 
