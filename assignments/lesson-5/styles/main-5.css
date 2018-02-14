@@ -28,7 +28,7 @@ header {
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 26px;
     margin-top: 20px;
     margin-left: 100px;
     margin-bottom: 0;
@@ -41,6 +41,7 @@ header img {
 
 header .subheading {
     margin-left: 100px;
+    font-size: .8rem;
 }
 
 .logo .small {
