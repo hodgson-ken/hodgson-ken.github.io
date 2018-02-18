@@ -13,11 +13,11 @@
     <!-- normalize useragent/browser defaults -->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="styles/main-5.css" rel="stylesheet">
+    <link href="styles/main-6.css" rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="styles/medium-5.css" rel="stylesheet">
+    <link href="styles/medium-6.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
-    <link href="styles/large-5.css" rel="stylesheet">
+    <link href="styles/large-6.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,8 +33,8 @@
 
     <!-- site navigation use placeholder references -->
     <nav>
-        <button onclick="toggleNavMenu()">&#9776;</button>
-        <ul>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="primaryNav">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -47,7 +47,11 @@
     <main>
         <h2>The City of Franklin</h2>
         <figure>
-            <img src="images/franklin-city-wide.jpg" alt="Wide view of small city, homes and trees">
+            <img src="images/franklin-large.jpg" alt="Franklin city sunset" sizes="100vw"
+                 srcset="images/franklin-large.jpg 800w,
+                         images/franklin-medium.jpg 600w,
+                         images/franklin-small.jpg 400w
+                 ">
         </figure>
         <section>
             <h3>Weather Summary</h3>
@@ -117,7 +121,7 @@
         <aside>
             Contact: Ken Hodgson, 123 My Street, Rexburg, ID 83440, 208-999-1234
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | Franklin City Happenings | <span id="currentdate">Current Date Placeholder</span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Franklin City Happenings | <span id="currentdate"></span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
