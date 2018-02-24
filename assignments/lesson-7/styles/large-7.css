@@ -1,0 +1,16 @@
+@media only screen and (min-width: 45rem) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 40%;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    img:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+    main figure figcaption:hover {
+        text-shadow: 5px 5px 10px gray;
+    }
+}
