@@ -73,7 +73,7 @@ header .subheading {
 
 /*Small screens*/
 
-@media only screen and (max-width: 35em) {
+@media only screen and (max-width: 37.5em) {
     .primaryNav li {
         display: none;
     }
@@ -88,6 +88,7 @@ header .subheading {
 }
 
 /*Medium Screens*/
+
 @media only screen and (min-width: 25em) {
     .gallery {
         display: grid;
@@ -97,7 +98,7 @@ header .subheading {
 
 /*Large Screens*/
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 37.5em) {
     .primaryNav {
         display: flex;
         list-style: none;
