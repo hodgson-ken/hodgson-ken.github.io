@@ -186,13 +186,23 @@ main h3 {
     font-size: 16px;
 }
 
-main figure {
+figure {
+    margin: 1em;
+}
+
+main figure.franklin-main img {
+    width: 100%;
+}
+
+/*Gallery Image CSS*/
+
+main .gallery figure {
     margin: .2rem .2rem .4rem .2rem;
     border-radius: .4rem;
     width: 96%;
 }
 
-main figure img {
+main .gallery figure img {
     width: 100%;
     border-radius: .4rem;
 }
@@ -263,7 +273,7 @@ article p.town-article img {
 .town-article {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 1em;
 }
 
 footer {
