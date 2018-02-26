@@ -187,12 +187,14 @@ main h3 {
 }
 
 main figure {
-    margin: 0 0 .2rem 2%;
+    margin: .2rem .2rem .4rem .2rem;
+    border-radius: .4rem;
     width: 96%;
 }
 
 main figure img {
     width: 100%;
+    border-radius: .4rem;
 }
 
 section {
