@@ -67,6 +67,8 @@ header h1 {
     font-size: 24px;
     padding-top: 25px;
     margin: 0 auto;
+    font-family: Molle;
+    font-style: italic;
 }
 
 header img {
@@ -75,7 +77,7 @@ header img {
 }
 
 header .subheading {
-    font-size: .8rem;
+    font-size: .9rem;
     padding-top: 5px;
 }
 
@@ -171,7 +173,7 @@ nav ul li a {
 
 nav ul li.active a {
     background-color: #ffb748;
-    color: white;
+    color: black;
 }
 
 nav ul li a:hover {
