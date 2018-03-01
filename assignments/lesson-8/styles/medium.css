@@ -1,0 +1,40 @@
+@media only screen and (min-width: 40rem) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header h1 {
+        font-size: 36px;
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    nav ul li {
+        display: flex;
+    }
+    nav ul li a {
+        border: none;
+        padding: .5rem 0 .5rem 0;
+    }
+
+    section .summarytable {
+        max-width: 65%;
+    }
+    section.forecast {
+        display: flex;
+        flex-direction: column;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article {
+        display: flex;
+        flex-direction: row;
+    }
+    article p.town-article img {
+        width: 62.666%;
+        align-self: flex-start;
+        margin: 0 1em 0 0;
+    }
+
+
+    /* responsive images */
+}
