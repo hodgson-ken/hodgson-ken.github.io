@@ -56,7 +56,7 @@ footer {
 
 @keyframes sunrise {
     from {
-        background-position: -50px 80px;
+        background-position: -40px 80px;
     }
     to {
         background-position: 0 0;
@@ -194,6 +194,21 @@ main h1 {
 main h2 {
     color: #f0341f;
     font-size: 20px;
+    padding: 16px;
+}
+
+main h2.thanks {
+    color: #f0341f;
+    font-size: 20px;
+    text-align: center;
+}
+
+img.thanks {
+    display: flex;
+    margin: 0px auto 30px auto;
+    border-radius: 12px;
+    box-shadow: 8px 8px 20px;
+    max-width: 80%;
 }
 
 main h3 {
@@ -222,9 +237,7 @@ main .gallery figure img {
     border-radius: .4rem;
 }
 
-section {
-
-}
+section {}
 
 section.gallery figure {
     max-height: 100%;
@@ -277,6 +290,75 @@ td {
     padding: 8px;
     border: solid .5px lightgray;
 }
+
+/*********************Form Stuff***********************/
+
+form {
+    margin: 1em;
+}
+
+fieldset {
+    background-color: lightgray;
+    border-radius: .4em;
+    margin: 1.5em 0;
+    border: #917a56 solid 1px;
+}
+
+input,
+select {
+    min-width: 100%;
+    border-radius: .3em;
+}
+
+input.radio {
+    min-width: auto;
+}
+
+legend {
+    color: white;
+    margin-left: 10px;
+    padding: .4em;
+    border: #917a56 solid 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: .4em;
+}
+
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 4px;
+    /*max-width: 200px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em 1em;
+    font-size: 1.5em;
+    background: #f0341f;
+    box-shadow: 4px 4px 16px #666;
+}
+
+
+span#severityvalue {
+    display: inline-flex;
+}
+
+textarea {
+    width: 100%;
+    border-radius: .3em;
+}
+
+/******************************************************************/
 
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */

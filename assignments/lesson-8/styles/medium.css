@@ -35,6 +35,10 @@
         margin: 0 1em 0 0;
     }
 
-
+    input,
+    select {
+        min-width: 400px;
+        border-radius: .3em;
+    }
     /* responsive images */
 }
