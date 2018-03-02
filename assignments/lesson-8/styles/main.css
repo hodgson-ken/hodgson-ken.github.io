@@ -13,14 +13,7 @@ body {
     /* Declare the base font-family - from google font api or other */
 }
 
-header {
-    max-width: 960px;
-    height: 80px;
-    display: flex;
-    background-color: #6ac6f9;
-    margin: 0 auto;
-    border: solid 1px gray;
-}
+
 
 main,
 footer {
@@ -35,13 +28,33 @@ footer {
     margin: 0px 0px 0px 10px;
 }
 
+/***************** Animated and related Objects *******************/
+
 .sun {
     width: 80px;
     height: 80px;
     background: url(../images/SunLogo-Sun.png);
     background-repeat: no-repeat;
     background-size: contain;
+
+    /*****Note the full names vs shortcuts below:*****/
     animation: sunrise 2s ease-in-out;
+    /*animation-name: spastic-sunrise;
+    animation-duration: 5s;
+    animation-fill-mode: ease-in-out;*/
+}
+
+header {
+    max-width: 960px;
+    height: 80px;
+    display: flex;
+    background-color: #6ac6f9;
+    /*#4a8aae, then #3f7695 to darken*/
+    margin: 0 auto;
+    border: solid 1px gray;
+
+    animation: skylight 2s ease-in-out;
+    /*animation: spastic-skylight 5s ease-in-out;*/
 }
 
 .clouds {
@@ -52,16 +65,105 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;
+
 }
+
+/******************** Normal Animations ***********************/
 
 @keyframes sunrise {
     from {
         background-position: -40px 80px;
+        /* x-axis (horizontal), then y-axis (vertical) */
     }
     to {
         background-position: 0 0;
     }
 }
+
+@keyframes skylight {
+    0% {
+        background-color: #1f3b4a;
+    }
+    100% {
+        background-color: #6ac6f9;
+    }
+}
+
+/******************** Spastic Animations ***********************/
+
+@keyframes spastic-sunrise {
+
+    0% {
+        background-position: 0px 80px;
+        /*start*/
+    }
+    20% {
+        background-position: 0px 60px;
+        /*peak in from bottom*/
+    }
+    30% {
+        background-position: 0px 80px;
+        /*peak back out to bottom*/
+    }
+    32% {
+        background-position: -80px 80px;
+        /*move left*/
+    }
+    35% {
+        background-position: -80px 0px;
+        /*move up*/
+    }
+    45% {
+        background-position: -60px 0px;
+        /*peak in from left*/
+    }
+    55% {
+        background-position: -80px 0px;
+        /*peak back out to left*/
+    }
+    56% {
+        background-position: -80px 0px;
+        /*move up*/
+    }
+    57% {
+        background-position: -80px -80px;
+        /*move right*/
+    }
+    58% {
+        background-position: 0px -80px;
+        /*drop down from top*/
+    }
+    100% {
+        background-position: 0px 0px;
+        /*settle*/
+    }
+}
+
+@keyframes spastic-skylight {
+    0% {
+        background-color: #1f3b4a;
+    }
+    20% {
+        background-color: #4a8aae;
+    }
+    30% {
+        background-color: #1f3b4a;
+    }
+    35% {
+        background-color: #1f3b4a;
+    }
+    45% {
+        background-color: #4a8aae;
+    }
+    55% {
+        background-color: #1f3b4a;
+    }
+    100% {
+        background-color: #6ac6f9;
+    }
+}
+
+/********************************************************/
 
 header h1 {
     font-size: 24px;
