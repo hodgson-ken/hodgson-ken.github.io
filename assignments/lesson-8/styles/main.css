@@ -38,10 +38,12 @@ footer {
     background-size: contain;
 
     /*****Note the full names vs shortcuts below:*****/
+    
     animation: sunrise 2s ease-in-out;
+    
     /*animation-name: spastic-sunrise;
     animation-duration: 5s;
-    animation-fill-mode: ease-in-out;*/
+    animation-timing-function: ease-in-out; */
 }
 
 header {
@@ -54,6 +56,7 @@ header {
     border: solid 1px gray;
 
     animation: skylight 2s ease-in-out;
+    
     /*animation: spastic-skylight 5s ease-in-out;*/
 }
 
@@ -65,7 +68,6 @@ header {
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1;
-
 }
 
 /******************** Normal Animations ***********************/
