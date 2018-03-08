@@ -349,7 +349,7 @@ section.gallery figure {
 .summarytable {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     width: 96%;
     box-shadow: 0 0px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -363,6 +363,7 @@ section.gallery figure {
     text-align: center;
     padding: 6px;
     flex-basis: 160px;
+    margin: auto;
 }
 
 picture {
