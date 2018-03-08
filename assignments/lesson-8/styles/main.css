@@ -38,9 +38,8 @@ footer {
     background-size: contain;
 
     /*****Note the full names vs shortcuts below:*****/
-    
     animation: sunrise 2s ease-in-out;
-    
+
     /*animation-name: spastic-sunrise;
     animation-duration: 5s;
     animation-timing-function: ease-in-out; */
@@ -56,7 +55,7 @@ header {
     border: solid 1px gray;
 
     animation: skylight 2s ease-in-out;
-    
+
     /*animation: spastic-skylight 5s ease-in-out;*/
 }
 
@@ -298,7 +297,6 @@ main h1 {
 main h2 {
     color: #f0341f;
     font-size: 20px;
-    padding: 16px;
 }
 
 main h2.thanks {
@@ -352,24 +350,23 @@ section.gallery figure {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 96%;
-}
-
-picture {
-    display: flex;
-    margin: 0 auto;
+    margin: auto;
+    width: 96%;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color:rgba(99, 97, 84, 0.07);
 }
 
 .highlow,
 .current,
 .conditions,
 .wind-chill {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
     text-align: center;
-    min-width: 80px;
+    padding: 6px;
+    flex-basis: 160px;
+}
+
+picture {
+    margin: auto;
 }
 
 .current p {
@@ -383,6 +380,10 @@ picture {
 
 table {
     margin: 0 auto;
+    border-collapse: collapse;
+    width: 96%;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(99, 97, 84, 0.07);
 }
 
 th {
@@ -393,6 +394,7 @@ th {
 td {
     padding: 8px;
     border: solid .5px lightgray;
+    text-align: center;
 }
 
 /*********************Form Stuff***********************/

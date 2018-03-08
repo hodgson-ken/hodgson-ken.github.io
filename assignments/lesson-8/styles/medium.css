@@ -17,8 +17,11 @@
         padding: .5rem 0 .5rem 0;
     }
 
-    section .summarytable {
-        max-width: 65%;
+    .summarytable {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 96%;
     }
     section.forecast {
         display: flex;
