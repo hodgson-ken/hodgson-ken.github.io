@@ -217,7 +217,7 @@ header .subheading {
 
 /*Medium Screens*/
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 30em) {
     .gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
