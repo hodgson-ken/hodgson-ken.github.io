@@ -65,22 +65,26 @@
         <section>
             <h3>Weather Summary</h3>
             <div class="summarytable">
-                <div class="highlow">
+                <div class="condition-summary">
+                    <p><span id="condition-text"></span></p>
+                </div>
+            </div>
+            <div class="summarytable">
+                <div class="temps">
+                    <p>Current: <span id="current">68</span>&deg;</p>
                     <p>High: <span id="high">68</span>&deg;</p>
                     <p>Low: <span id="low">42</span>&deg;</p>
                 </div>
                 <div class="current">
-                    <p>Sunny</p>
+                    <p><span id="condition"></span></p>
                     <picture>
-                        <img src="images/icon-sunny-ylw.png" alt="Sunny icon">
+                        <img id="current-weather-icon" src="" alt="Current Weather Icon">
                     </picture>
                 </div>
                 <div class="conditions">
-                    <p>Precipitation: 10%</p>
-                    <p>Wind Speed: <span id="wind">5</span> mph</p>
-                </div>
-                <div class="wind-chill">
-                    <p>Wind Chill: <span id="chill"></span></p>
+                    <p>Precip: <span id="precipitation"></span> in</p>
+                    <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                    <p>Wind Chill: <span id="chill"></span>&deg;</p>
                 </div>
             </div>
         </section>
@@ -137,7 +141,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/wu-weather.js"></script>
 
 </body>
 

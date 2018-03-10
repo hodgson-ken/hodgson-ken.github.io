@@ -47,11 +47,12 @@ footer {
 
 header {
     max-width: 960px;
-    height: 80px;
+    height: 100px;
     display: flex;
     background-color: #6ac6f9;
     /*#4a8aae, then #3f7695 to darken*/
     margin: 0 auto;
+    padding-top: 20px;
     border: solid 1px gray;
 
     animation: skylight 2s ease-in-out;
@@ -344,7 +345,6 @@ main .gallery figure img {
     border-radius: .4rem;
 }
 
-section {}
 
 section.gallery figure {
     max-height: 100%;
@@ -361,7 +361,13 @@ section.gallery figure {
     background-color: rgba(99, 97, 84, 0.07);
 }
 
-.highlow,
+.condition-summary {
+    margin: auto;
+    padding: 0px 10px;
+    font-style: italic;
+}
+
+.temps,
 .current,
 .conditions,
 .wind-chill {
@@ -376,7 +382,7 @@ picture {
 }
 
 .current p {
-    text-decoration: underline;
+    font-size: 1.5em;
     margin-bottom: 0;
 }
 

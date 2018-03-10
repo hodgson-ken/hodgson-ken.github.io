@@ -23,6 +23,11 @@
         margin: auto;
         width: 96%;
     }
+
+    .condition-summary {
+        font-size: 1.3em;
+    }
+
     section.forecast {
         display: flex;
         flex-direction: column;

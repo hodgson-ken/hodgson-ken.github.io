@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Franklin, MN",
+		"city":"Franklin",
+		"state":"MN",
+		"state_name":"Minnesota",
+		"country":"US",
+		"country_iso3166":"US",
+		"zip":"55333",
+		"magic":"1",
+		"wmo":"99999",
+		"latitude":"44.52999878",
+		"longitude":"-94.87999725",
+		"elevation":"307.8"
+		},
+		"observation_location": {
+		"full":"Dacotah Ridge GC, Morgan, Minnesota",
+		"city":"Dacotah Ridge GC, Morgan",
+		"state":"Minnesota",
+		"country":"US",
+		"country_iso3166":"US",
+		"latitude":"44.494377",
+		"longitude":"-94.928246",
+		"elevation":"1000 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"KMNMORGA2",
+		"observation_time":"Last Updated on March 10, 11:39 AM CST",
+		"observation_time_rfc822":"Sat, 10 Mar 2018 11:39:51 -0600",
+		"observation_epoch":"1520703591",
+		"local_time_rfc822":"Sat, 10 Mar 2018 11:40:16 -0600",
+		"local_epoch":"1520703616",
+		"local_tz_short":"CST",
+		"local_tz_long":"America/Chicago",
+		"local_tz_offset":"-0600",
+		"weather":"Mostly Cloudy",
+		"temperature_string":"32.4 F (0.2 C)",
+		"temp_f":32.4,
+		"temp_c":0.2,
+		"relative_humidity":"55%",
+		"wind_string":"Calm",
+		"wind_dir":"SSE",
+		"wind_degrees":152,
+		"wind_mph":0.0,
+		"wind_gust_mph":0,
+		"wind_kph":0,
+		"wind_gust_kph":0,
+		"pressure_mb":"1016",
+		"pressure_in":"30.01",
+		"pressure_trend":"0",
+		"dewpoint_string":"18 F (-8 C)",
+		"dewpoint_f":18,
+		"dewpoint_c":-8,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"32 F (0 C)",
+		"windchill_f":"32",
+		"windchill_c":"0",
+		"feelslike_string":"32 F (0 C)",
+		"feelslike_f":"32",
+		"feelslike_c":"0",
+		"visibility_mi":"10.0",
+		"visibility_km":"16.1",
+		"solarradiation":"556",
+		"UV":"4.0","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/US/MN/Franklin.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KMNMORGA2",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=44.494377,-94.928246",
+		"nowcast":""
+	}
+}
