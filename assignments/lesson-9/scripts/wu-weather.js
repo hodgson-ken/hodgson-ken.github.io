@@ -16,8 +16,11 @@ requestWeather.onload = function () {
     document.getElementById('condition').innerHTML = franklinWeather.current_observation.weather;
     document.getElementById('current').innerHTML = franklinWeather.current_observation.temp_f;
     document.getElementById('condition-text').innerHTML = franklinWeather.forecast.txt_forecast.forecastday["0"].fcttext;
-    document.getElementById('current-weather-icon').src = franklinWeather.current_observation.icon_url;
-
+    
+    var strHttp = franklinWeather.current_observation.icon_url;
+    var replaceHttp = strHttps.replace("http", "https");
+    document.getElementById('current-weather-icon').innerHTML = replaceHttp;
+    
     //get temp (t)
     var t = parseInt(document.getElementById("current").innerHTML);
 
