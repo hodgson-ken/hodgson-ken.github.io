@@ -8,7 +8,7 @@ request.onload = function () {
     console.log(franklinWeather);
     document.getElementById('high').innerHTML = franklinWeather.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
     document.getElementById('low').innerHTML = franklinWeather.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
-    document.getElementById('precipitation').innerHTML = franklinWeather.current_observation.precip_today_in;
+    document.getElementById('precipitation').innerHTML = parseInt(franklinWeather.current_observation.precip_today_in);
     document.getElementById('wind-speed').innerHTML = franklinWeather.current_observation.wind_mph;
     document.getElementById('condition').innerHTML = franklinWeather.current_observation.weather;
     document.getElementById('current').innerHTML = franklinWeather.current_observation.temp_f;
