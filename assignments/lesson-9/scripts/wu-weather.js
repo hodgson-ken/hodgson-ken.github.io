@@ -1,13 +1,13 @@
 //yahoo key
 /*var requestURL = 'https:/api.wunderground.com/api/27cc369995e8b45d/conditions/forecast/q/MN/Franklin.json';*/
 //gmail key
-var requestURL = 'https:/api.wunderground.com/api/d3496b97cfe94a82/conditions/forecast/q/MN/Franklin.json';
-var request = new XMLHttpRequest();
-request.open('GET', requestURL, true);
-request.send();
+//var requestURL = 'https:/api.wunderground.com/api/d3496b97cfe94a82/conditions/forecast/q/MN/Franklin.json';
+var requestWeather = new XMLHttpRequest();
+requestWeather.open('Get', 'https:/api.wunderground.com/api/d3496b97cfe94a82/conditions/forecast/q/MN/Franklin.json', true);
+requestWeather.send();
 
-request.onload = function () {
-    var franklinWeather = JSON.parse(request.responseText);
+requestWeather.onload = function () {
+    var franklinWeather = JSON.parse(requestWeather.responseText);
     //console.log(franklinWeather);
     document.getElementById('high').innerHTML = franklinWeather.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
     document.getElementById('low').innerHTML = franklinWeather.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
@@ -17,7 +17,7 @@ request.onload = function () {
     document.getElementById('current').innerHTML = franklinWeather.current_observation.temp_f;
     document.getElementById('condition-text').innerHTML = franklinWeather.forecast.txt_forecast.forecastday["0"].fcttext;
     document.getElementById('current-weather-icon').src = franklinWeather.current_observation.icon_url;
-/*
+
     //get temp (t)
     var t = parseInt(document.getElementById("current").innerHTML);
 
@@ -29,5 +29,5 @@ request.onload = function () {
 
     //update id (chill) in page with value of (f)
     document.getElementById("chill").innerHTML = f.toFixed(0);
-*/
+
 }
