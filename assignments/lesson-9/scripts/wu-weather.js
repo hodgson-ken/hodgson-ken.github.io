@@ -1,4 +1,7 @@
-var requestURL = 'https:/api.wunderground.com/api/27cc369995e8b45d/conditions/forecast/q/MN/Franklin.json';
+//yahoo key
+/*var requestURL = 'https:/api.wunderground.com/api/27cc369995e8b45d/conditions/forecast/q/MN/Franklin.json';*/
+//gmail key
+var requestURL = 'https:/api.wunderground.com/api/d3496b97cfe94a82/conditions/forecast/q/MN/Franklin.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
 request.send();
