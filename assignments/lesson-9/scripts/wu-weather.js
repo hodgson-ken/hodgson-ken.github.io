@@ -3,7 +3,7 @@
 //gmail key
 //var requestURL = 'https:/api.wunderground.com/api/d3496b97cfe94a82/conditions/forecast/q/MN/Franklin.json';
 var requestWeather = new XMLHttpRequest();
-requestWeather.open('Get', 'https:/api.wunderground.com/api/d3496b97cfe94a82/conditions/forecast/q/MN/Franklin.json', true);
+requestWeather.open('Get', 'https://api.wunderground.com/api/d3496b97cfe94a82/conditions/forecast/q/MN/Franklin.json', true);
 requestWeather.send();
 
 requestWeather.onload = function () {
