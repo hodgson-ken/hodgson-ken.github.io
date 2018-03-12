@@ -273,6 +273,7 @@ nav ul li a {
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, .3);
     width: 100%;
+    transition: background-color .5s;
 }
 
 nav ul li.active a {
