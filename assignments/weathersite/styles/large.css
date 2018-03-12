@@ -1,0 +1,29 @@
+@media only screen and (min-width: 55rem) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 40%;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery figure:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+    .gallery figure:hover {
+        text-shadow: 5px 5px 10px gray;
+    }
+
+    section.town-data-container {
+        flex-direction: row;
+    }
+    section.town-data-container article {
+        display: block;
+    }
+    section.town-data-container div {
+        max-width: 100%;
+    }
+
+    section.town-data-container :nth-child(even) {}
+
+}

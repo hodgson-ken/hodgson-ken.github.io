@@ -1,0 +1,84 @@
+@media only screen and (min-width: 40rem) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header h1 {
+        font-size: 36px;
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    nav ul li {
+        display: flex;
+    }
+    nav ul li a {
+        border: none;
+        padding: .5rem 0 .5rem 0;
+    }
+
+    .summarytable {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 96%;
+    }
+
+    .condition-summary {
+        font-size: 1.3em;
+    }
+
+    section.forecast {
+        display: flex;
+        flex-direction: column;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    article p.town-article {
+        display: flex;
+        flex-direction: row;
+    }
+    article p.town-article img {
+        width: 62.666%;
+        align-self: flex-start;
+        margin: 0 1em 0 0;
+    }
+
+    article div.home-weather-article {
+        display: block;
+    }
+
+    article div.home-weather-article img {
+        width: 50%;
+        float: right;
+        margin: 0 0 1em 0;
+    }
+
+    input,
+    select {
+        min-width: 400px;
+        border-radius: .3em;
+    }
+
+    /*******************flex json container*******************/
+    /*******************flex json children*******************/
+    section.town-data-container article {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    article h3 {
+        width: 100%;
+    }
+    section.town-data-container div {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    section.town-data-container :nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    section.town-data-container img {}
+    /********************************************************/
+}

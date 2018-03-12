@@ -1,0 +1,570 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-family: "Alef";
+    font-size: 16px;
+    background-color: silver;
+    /* Declare the base font-family - from google font api or other */
+}
+
+
+
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.title-text {
+    margin: 0px 0px 0px 10px;
+}
+
+/***************** Animated and related Objects *******************/
+
+.sun {
+    width: 80px;
+    height: 80px;
+    background: url(../images/SunLogo-Sun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /*****Note the full names vs shortcuts below:*****/
+    animation: sunrise 2s ease-in-out;
+
+    /*animation-name: spastic-sunrise;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out; */
+}
+
+header {
+    max-width: 960px;
+    height: 100px;
+    display: flex;
+    background-color: #6ac6f9;
+    /*#4a8aae, then #3f7695 to darken*/
+    margin: 0 auto;
+    padding-top: 20px;
+    border: solid 1px gray;
+
+    animation: skylight 2s ease-in-out;
+
+    /*animation: spastic-skylight 5s ease-in-out;*/
+}
+
+.clouds {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/SunLogo-Cloud.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+/******************** Normal Animations ***********************/
+
+@keyframes sunrise {
+    from {
+        background-position: -40px 80px;
+        /* x-axis (horizontal), then y-axis (vertical) */
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes skylight {
+    0% {
+        background-color: #1f3b4a;
+    }
+    100% {
+        background-color: #6ac6f9;
+    }
+}
+
+/******************** Spastic Animations ***********************/
+
+@keyframes spastic-sunrise {
+
+    0% {
+        background-position: 0px 80px;
+        /*start*/
+    }
+    20% {
+        background-position: 0px 60px;
+        /*peak in from bottom*/
+    }
+    30% {
+        background-position: 0px 80px;
+        /*peak back out to bottom*/
+    }
+    32% {
+        background-position: -80px 80px;
+        /*move left*/
+    }
+    35% {
+        background-position: -80px 0px;
+        /*move up*/
+    }
+    45% {
+        background-position: -60px 0px;
+        /*peak in from left*/
+    }
+    55% {
+        background-position: -80px 0px;
+        /*peak back out to left*/
+    }
+    56% {
+        background-position: -80px 0px;
+        /*move up*/
+    }
+    57% {
+        background-position: -80px -80px;
+        /*move right*/
+    }
+    58% {
+        background-position: 0px -80px;
+        /*drop down from top*/
+    }
+    100% {
+        background-position: 0px 0px;
+        /*settle*/
+    }
+}
+
+@keyframes spastic-skylight {
+    0% {
+        background-color: #1f3b4a;
+    }
+    20% {
+        background-color: #4a8aae;
+    }
+    30% {
+        background-color: #1f3b4a;
+    }
+    35% {
+        background-color: #1f3b4a;
+    }
+    45% {
+        background-color: #4a8aae;
+    }
+    55% {
+        background-color: #1f3b4a;
+    }
+    100% {
+        background-color: #6ac6f9;
+    }
+}
+
+/********************************************************/
+
+header h1 {
+    font-size: 24px;
+    padding-top: 25px;
+    margin: 0 auto;
+    font-family: Molle;
+    font-style: italic;
+}
+
+header img {
+    width: 80px;
+    vertical-align: middle;
+}
+
+header .subheading {
+    font-size: .9rem;
+    padding-top: 5px;
+}
+
+
+.logo .large {
+    display: flex;
+}
+
+.hamburger {
+    margin: .5rem 0;;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+/**************Here is where we'll do media queries to make the menu responsive.**************/
+
+/*Small screens*/
+
+@media only screen and (max-width: 40rem) {
+    .primaryNav li {
+        display: none;
+    }
+
+    .primaryNav.responsive li {
+        display: flex;
+    }
+
+    .primaryNav.responsive li a {
+        flex: 0 0 auto;
+    }
+}
+
+/*Medium Screens*/
+
+@media only screen and (min-width: 30em) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*Large Screens*/
+
+@media only screen and (min-width: 40rem) {
+    .primaryNav {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+    }
+    .primaryNav li {
+        display: inline-flex;
+        border: none;
+        margin: 0 auto;
+    }
+}
+
+/*****End media queries****/
+
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    border: solid 1px gray;
+    clear: both;
+    background-color: #636154;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*This centers when in larger screens*/
+}
+
+nav ul li {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    /*This centers when in smaller screens (hamburger)*/
+    color: white;
+    padding: .8rem 2%;
+    text-decoration: none;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    width: 100%;
+    transition: background-color .5s;
+}
+
+nav ul li.active a {
+    background-color: #ffb748;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+}
+
+
+main {
+    background-color: white;
+}
+
+main h1 {
+    color: black;
+    font-size: 24px;
+}
+
+main h2 {
+    color: #f0341f;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+main h2.thanks {
+    color: #f0341f;
+    font-size: 20px;
+    text-align: center;
+}
+
+img.thanks {
+    display: flex;
+    margin: 0px auto 30px auto;
+    border-radius: 12px;
+    box-shadow: 8px 8px 20px;
+    max-width: 80%;
+}
+
+main h3 {
+    font-size: 16px;
+    color: white;
+    padding: .4em;
+    border: #917a56 solid 1px;
+    background-color: #636154;
+    border-radius: .4em;
+}
+
+figure {
+    margin: 1em;
+}
+
+main figure.franklin-main img {
+    width: 100%;
+}
+
+/*Gallery Image CSS*/
+
+main .gallery figure {
+    margin: .2rem .2rem .4rem .2rem;
+    border-radius: .4rem;
+    width: 96%;
+}
+
+main .gallery figure img {
+    width: 100%;
+    border-radius: .4rem;
+}
+
+
+section.gallery figure {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.summarytable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 96%;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(99, 97, 84, 0.07);
+}
+
+.condition-summary {
+    margin: auto;
+    padding: 0px 10px;
+    font-style: italic;
+}
+
+.temps,
+.current,
+.conditions,
+.wind-chill {
+    text-align: center;
+    padding: 6px;
+    flex-basis: 160px;
+    margin: auto;
+}
+
+picture {
+    margin: auto;
+}
+
+.current p {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.forecast {
+    display: none;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 96%;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(99, 97, 84, 0.07);
+}
+
+th {
+    padding: 8px;
+    border: solid .5px lightgray;
+}
+
+td {
+    padding: 8px;
+    border: solid .5px lightgray;
+    text-align: center;
+}
+
+/*********************Form Stuff***********************/
+
+form {
+    margin: 1em;
+}
+
+fieldset {
+    background-color: lightgray;
+    border-radius: .4em;
+    margin: 1.5em 0;
+    border: #917a56 solid 1px;
+}
+
+input,
+select,
+textarea {
+    min-width: 100%;
+    border-radius: .3em;
+    padding: 5px;
+}
+
+input.radio {
+    min-width: auto;
+}
+
+legend {
+    color: white;
+    margin-left: 10px;
+    padding: .4em;
+    border: #917a56 solid 1px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: .4em;
+}
+
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 4px;
+    /*max-width: 200px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em 1em;
+    font-size: 1.5em;
+    background: #f0341f;
+    box-shadow: 4px 4px 16px #666;
+}
+
+
+span#severityvalue {
+    display: inline-flex;
+}
+
+textarea {
+    width: 100%;
+    border-radius: .3em;
+}
+
+/******************************************************************/
+
+article div.home-weather-article {
+    display: block;
+}
+
+article div.home-weather-article img {
+    width: 100%;
+    margin: 0 0 1em 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/*******************flex json container*******************/
+
+section.town-data-container {
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-start; (use this in medium view)*/
+    /*justify-content: space-between;*/
+}
+
+/*******************flex json children*******************/
+
+section.town-data-container article {
+    padding: 5px;
+}
+
+section.town-data-container img {
+    width: 100%;
+
+}
+
+section.town-data-container div {
+    padding: 10px;
+}
+
+section.town-data-container p,
+ul {
+    margin: 0px 10px;
+}
+
+p.motto {
+    font-style: italic;
+    font-weight: bold;
+    color: #f0341f;
+}
+
+/********************************************************/
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    /* fill the page in the small/phone view */
+    margin: 0 0 1em 0;
+}
+
+.town-article {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.home-weather-article {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+footer {
+    background-color: #636154;
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+
+footer aside {
+    text-decoration: none;
+}
+
+footer > p {
+    font-size: .75rem;
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
