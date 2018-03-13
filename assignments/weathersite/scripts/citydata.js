@@ -19,7 +19,12 @@ function loadTowns(jsonObj) {
         if (locations[i].name == 'Franklin' || locations[i].name == 'Greenville' || locations[i].name == 'Springfield') {
             var myArticle = document.createElement('article');
                 myArticle.className = locations[i].name;
-            var myH3 = document.createElement('h3');            
+            var myH3 = document.createElement('h3');
+            //Lowercase required to get JSON city names to be === to html pages. 
+            var myHeaderLink = document.createElement('a');
+                myHeaderLink.setAttribute('href', locations[i].name.toLowerCase() + '.html');
+            var myImageLink = document.createElement('a');
+                myImageLink.setAttribute('href', myHeaderLink);
             var myImgDiv = document.createElement('div');
                 myImgDiv.className = 'child';
             var myImg = document.createElement('img');
@@ -35,7 +40,8 @@ function loadTowns(jsonObj) {
             var myPara5 = document.createElement('p');
             var myList = document.createElement('ul');
 
-            myH3.textContent = locations[i].name;
+            //myH3.textContent = ;
+            myHeaderLink.textContent = locations[i].name;
             myPara1.textContent = 'Motto: ' + locations[i].motto;
             myPara2.textContent = 'Year Founded: ' + locations[i].yearFounded;
             myPara3.textContent = 'Current Population: ' + locations[i].currentPopulation;
@@ -50,8 +56,10 @@ function loadTowns(jsonObj) {
             }
 
             myArticle.appendChild(myH3);
+            myH3.appendChild(myHeaderLink);
             myArticle.appendChild(myImgDiv);
-            myImgDiv.appendChild(myImg);
+            myImgDiv.appendChild(myImageLink);
+            myImageLink.appendChild(myImg);
             myArticle.appendChild(myParaDiv);
             myParaDiv.appendChild(myPara1);
             myParaDiv.appendChild(myPara2);

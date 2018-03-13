@@ -325,6 +325,11 @@ main h3 {
     border-radius: .4em;
 }
 
+main h3 a {
+    color: white;
+    text-decoration: none;
+}
+
 figure {
     margin: 1em;
 }
@@ -487,7 +492,7 @@ article div.home-weather-article {
 
 article div.home-weather-article img {
     width: 100%;
-    margin: 0 0 1em 0;
+    padding: 0 0 1em 0;
 }
 
 .clear {
