@@ -15,7 +15,6 @@ body {
     font-family: Bouquet, Lato, sans-serif;
     /* Ubuntu, sans-serif */
     ;
-    color: green;
 }
 
 h1 {
@@ -50,8 +49,7 @@ footer a {
 }
 
 header img {
-    width: 148px/*  */
-    ;
+    width: 148px;
     height: auto;
     float: right;
 }
