@@ -1,7 +1,7 @@
 var townDataContainer = document.querySelector('section');
-//This data is being "Blocked by Client" so trying local copy instead...
-//var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var requestURL = 'scripts/towndata.json';
+//This data is being "Blocked by Client" so trying local copy instead...ok, it was my adblock software. oops.
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+//var requestURL = 'scripts/towndata.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
