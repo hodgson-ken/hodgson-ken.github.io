@@ -25,7 +25,7 @@
     }
 
     .condition-summary {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 
     section.forecast {
@@ -40,7 +40,7 @@
     article p.town-article img {
         width: 62.666%;
         align-self: flex-start;
-        margin: 0 1em 0 0;
+        margin: 0 1rem 0 0;
     }
 
     article div.home-weather-article {
@@ -50,13 +50,13 @@
     article div.home-weather-article img {
         width: 50%;
         float: right;
-        margin: 0 0 0 1em;
+        margin: 0 0 0 1rem;
     }
 
     input,
     select {
         min-width: 400px;
-        border-radius: .3em;
+        border-radius: .3rem;
     }
 
     /*******************flex json container*******************/

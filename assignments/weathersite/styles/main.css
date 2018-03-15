@@ -222,7 +222,7 @@ header .subheading {
 
 /*Medium Screens*/
 
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 30rem) {
     .gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -323,10 +323,10 @@ img.thanks {
 main h3 {
     font-size: 16px;
     color: white;
-    padding: .4em;
+    padding: .4rem;
     border: #917a56 solid 1px;
     background-color: #636154;
-    border-radius: .4em;
+    border-radius: .4rem;
 }
 
 main h3 a {
@@ -335,7 +335,7 @@ main h3 a {
 }
 
 figure {
-    margin: 1em;
+    margin: 1;
 }
 
 main figure.franklin-main img {
@@ -392,7 +392,7 @@ picture {
 }
 
 .current p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -422,13 +422,13 @@ td {
 /*********************Form Stuff***********************/
 
 form {
-    margin: 1em;
+    margin: 1rem;
 }
 
 fieldset {
     background-color: lightgray;
-    border-radius: .4em;
-    margin: 1.5em 0;
+    border-radius: .4rem;
+    margin: 1.5rem 0;
     border: #917a56 solid 1px;
 }
 
@@ -436,7 +436,7 @@ input,
 select,
 textarea {
     min-width: 100%;
-    border-radius: .3em;
+    border-radius: .3rem;
     padding: 5px;
 }
 
@@ -447,22 +447,22 @@ input.radio {
 legend {
     color: white;
     margin-left: 10px;
-    padding: .4em;
+    padding: .4rem;
     border: #917a56 solid 1px;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: .4em;
+    border-radius: .4rem;
 }
 
 
 label {
     display: block;
-    margin: .5em;
+    margin: .5rem;
 }
 
 label span {
     display: block;
-    padding-top: .5em;
-    padding-bottom: .2em;
+    padding-top: .5rem;
+    padding-bottom: .2rem;
 }
 
 input.submitBtn {
@@ -472,8 +472,8 @@ input.submitBtn {
     /*max-width: 200px;*/
     margin-left: auto;
     margin-right: auto;
-    padding: .5em 1em;
-    font-size: 1.5em;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
     background: #f0341f;
     box-shadow: 4px 4px 16px #666;
 }
@@ -485,7 +485,7 @@ span#severityvalue {
 
 textarea {
     width: 100%;
-    border-radius: .3em;
+    border-radius: .3rem;
 }
 
 /******************************************************************/
@@ -496,7 +496,7 @@ article div.home-weather-article {
 
 article div.home-weather-article img {
     width: 100%;
-    padding: 0 0 1em 0;
+    padding: 0 0 1rem 0;
 }
 
 .clear {
@@ -544,34 +544,42 @@ article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%;
     /* fill the page in the small/phone view */
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
 }
 
 .town-article {
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .home-weather-article {
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding: 1rem;
 }
 
 footer {
     background-color: #636154;
     color: white;
     text-align: center;
-    height: 80px;
+    padding: 0px;
+    border: solid gray .5px;
 }
 
 footer aside {
     text-decoration: none;
+    background-color: skyblue;
+    color:black;
+    height: 40px;
+    line-height: 40px;
 }
 
 footer > p {
     font-size: .75rem;
+    height: 30px;
+    line-height: 30px;
+    margin:0 auto;
 }
 
 /* This structure refers to p elements that are direct children of the footer element */
