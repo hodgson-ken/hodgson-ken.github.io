@@ -36,25 +36,18 @@ footer {
     background: url(../images/SunLogo-Sun.png);
     background-repeat: no-repeat;
     background-size: contain;
-
-    /*****Note the full names vs shortcuts below:*****/
     animation: sunrise 2s ease-in-out;
-
-    /*animation-name: spastic-sunrise;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out; */
 }
 
 header {
     max-width: 960px;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     background-color: #6ac6f9;
     /*#4a8aae, then #3f7695 to darken*/
     margin: 0 auto;
     padding-top: 20px;
     border: solid 1px gray;
-
     animation: skylight 2s ease-in-out;
 
     /*animation: spastic-skylight 5s ease-in-out;*/
