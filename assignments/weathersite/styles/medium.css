@@ -60,7 +60,6 @@
     }
 
     /*******************flex json container*******************/
-    /*******************flex json children*******************/
     section.town-data-container article {
         display: flex;
         flex-wrap: wrap;
