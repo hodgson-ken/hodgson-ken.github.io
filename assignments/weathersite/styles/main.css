@@ -116,6 +116,10 @@ header .subheading {
     color: #fff;
 }
 
+.gallery {
+    display: grid;
+    grid-row-gap: 1.5rem;
+}
 /**************Here is where we'll do media queries to make the menu responsive.**************/
 
 /*Small screens*/
@@ -138,7 +142,6 @@ header .subheading {
 
 @media only screen and (min-width: 30rem) {
     .gallery {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
