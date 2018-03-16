@@ -119,7 +119,9 @@ header .subheading {
 .gallery {
     display: grid;
     grid-row-gap: 1.5rem;
+    padding: 1rem 0;
 }
+
 /**************Here is where we'll do media queries to make the menu responsive.**************/
 
 /*Small screens*/
