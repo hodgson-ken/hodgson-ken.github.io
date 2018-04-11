@@ -3,25 +3,25 @@
       {  
          "type":"Tune-Ups",
          "prices":[  
-            {  
-               "Basic Tune-Up":"$39.99",
-               "Premium Tune-Up":"$69.99",
-               "Brake System Tune-Up":"$39.99",
-               "Drivetrain Tune-Up":"$24.99",
-               "Bike Build":"$39.99"
-            }
+             
+               {"task":"Basic Tune-Up", "price":"$39.99"},
+               {"task":"Premium Tune-Up", "price":"$69.99"},
+               {"task":"Brake System Tune-Up", "price":"$39.99"},
+               {"task":"Drivetrain Tune-Up", "price":"$24.99"},
+               {"task":"Bike Build", "price":"$39.99"}
+            
          ]
       },
       {  
          "type":"Installs",
          "prices":[  
-            {  
-               "Child Carrier":"$14.99",
-               "Cycle Computer":"$9.99",
-               "Fenders":"$12.99",
-               "Kickstand":"$1.99",
-               "Saddle":"$1.99"
-            }
+            
+               {"task":"Child Carrier", "price":"$14.99"},
+               {"task":"Cycle Computer", "price":"$9.99"},
+               {"task":"Fenders", "price":"$12.99"},
+               {"task":"Kickstand", "price":"$1.99"},
+               {"task":"Saddle", "price":"$1.99"}
+            
          ]
       }
    ]
