@@ -23,13 +23,15 @@
 
     <header>
         <div class="contain">
-            <img src="images/logo-400.png" class="logo">
+            <a href="index.html">
+                <img src="images/logo-400w.png" class="logo">
+            </a>
             <nav>
                 <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
                 <ul class="primaryNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="tours.html">Adventure Tours</a></li>
                 </ul>
@@ -40,46 +42,8 @@
     <main>
         <div class="contain">
 
-            <!--          <section class="banner box">
-                <div class="text-overlay">
-                    <h1>What are you waiting for?</h1>
-                </div>
-                <div class="action-button">
-                    <button class="banner-button">Next Event: Ride the Divide!</button>
-                </div>
-            </section>
- -->
-            <!-- Tab links -->
-            <section class="tab">
-                <button class="tablinks" onclick="openCategory(event, 'tours')" id="defaultOpen">Tours</button>
-                <button class="tablinks" onclick="openCategory(event, 'schedule')">Schedule</button>
-            </section>
+            <section class="table-container">
 
-            <!-- Tab content -->
-            <section id="tours" class="tabcontent highlights">
-                <h2>Choose Your Adventure</h2>
-                <section class="highlights">
-                    <div class="lakeside-highlight box">
-                        <a href="#">
-                            <img src="images/tour-lakeside-highlight.jpg">
-                            <h3>Lakeside Tour (All Riders - Easy)</h3>
-                            <p>Easy riding.  Beautiful Landscapes.</p>
-                        </a>
-                    </div>
-                    <div class="deepwoods-highlight box">
-                        <a href="#">
-                            <img src="images/tour-deepwoods-highlight.jpg">
-                            <h3>Deepwoods Tour (Experienced)</h3>
-                            <p>Lots of climbing. Lots of speed.</p>
-                        </a>
-                    </div>
-
-                </section>
-            </section>
-
-            <section id="schedule" class="tabcontent">
-                <h2>Schedule</h2>
-                <p>stuff</p>
             </section>
 
         </div>
@@ -120,7 +84,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="scripts/nav-tools.js"></script>
-
+    <script src="scripts/tablebuilder.js"></script>
 </body>
 
 </html>

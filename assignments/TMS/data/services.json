@@ -1,6 +1,6 @@
 {  
-      "id":1,
-      "type":"tune-up",
+ 
+      "type1":"tune-up",
       "tune-ups":[  
          {  
             "type":"Basic Tune-Up",
@@ -24,8 +24,8 @@
          }
       ]
    ,
-      "id":2;
-      "type":"install",
+ 
+      "type2":"install",
       "installs":[  
          {  
             "type":"Child Carrier",

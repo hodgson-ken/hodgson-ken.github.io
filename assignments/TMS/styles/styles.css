@@ -279,6 +279,17 @@ main .box {
     height: auto;
 }
 
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.services-table {
+    border: solid blue .5px;
+    /*testing*/
+}
+
 /******************************************************************/
 
 .footer-divs {
@@ -314,7 +325,8 @@ textarea {
 }
 
 input.submitBtn,
-.banner-button, .add-button {
+.banner-button,
+.add-button {
     color: white;
     border: solid 1px #111;
     padding: .5rem;
@@ -399,6 +411,12 @@ input.submitBtn:hover,
     }
     .product div.product-desc {
         flex: 0 0 250px;
+    }
+    .table-container {
+        flex-direction: row;
+    }
+    .services-table {
+               width: 48%;
     }
 }
 
