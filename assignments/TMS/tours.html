@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Ken Hodgson">
+    <meta name="description" content="Lots of stuff">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- all views -->
+    <link href="styles/styles.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <div class="contain">
+            <img src="images/logo-400.png" class="logo">
+            <nav>
+                <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+                <ul class="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="tours.html">Adventure Tours</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contain">
+
+            <!--          <section class="banner box">
+                <div class="text-overlay">
+                    <h1>What are you waiting for?</h1>
+                </div>
+                <div class="action-button">
+                    <button class="banner-button">Next Event: Ride the Divide!</button>
+                </div>
+            </section>
+ -->
+            <!-- Tab links -->
+            <section class="tab">
+                <button class="tablinks" onclick="openCategory(event, 'tours')" id="defaultOpen">Tours</button>
+                <button class="tablinks" onclick="openCategory(event, 'schedule')">Schedule</button>
+            </section>
+
+            <!-- Tab content -->
+            <section id="tours" class="tabcontent highlights">
+                <h2>Choose Your Adventure</h2>
+                <section class="highlights">
+                    <div class="lakeside-highlight box">
+                        <a href="#">
+                            <img src="images/tour-lakeside-highlight.jpg">
+                            <h3>Lakeside Tour (All Riders - Easy)</h3>
+                            <p>Easy riding.  Beautiful Landscapes.</p>
+                        </a>
+                    </div>
+                    <div class="deepwoods-highlight box">
+                        <a href="#">
+                            <img src="images/tour-deepwoods-highlight.jpg">
+                            <h3>Deepwoods Tour (Experienced)</h3>
+                            <p>Lots of climbing. Lots of speed.</p>
+                        </a>
+                    </div>
+
+                </section>
+            </section>
+
+            <section id="schedule" class="tabcontent">
+                <h2>Schedule</h2>
+                <p>stuff</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contain">
+            <aside class="footer-divs">
+                <div class="map">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611047!2d-111.09290618443556!3d45.67227287910392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1522727119552" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p>The Mountain Spoke</p>
+                    <p>3950 Valley Commons Drive</p>
+                    <p>Bozeman, MT 59718</p>
+                    <p>Phone: 888-123-4567</p>
+                    <p>Email: info@themountainspoke.com</p>
+                </div>
+                <div class="contact-form">
+                    <form action="thanks.html" enctype="multipart/form-data" name="contactUs">
+                        <h3>Request Info</h3>
+                        <input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required>
+                        <input name="email" type="email" placeholder="johnsmith@gmail.com">
+                        <input name="phone" type="tel" placeholder="Tel: 000-000-0000" required>
+                        <textarea rows="2" placeholder="Message:"></textarea>
+                        <input type="submit" value="Send" class="submitBtn">
+                    </form>
+                </div>
+            </aside>
+
+        </div>
+        <div class="footer-bar">
+            <p class="contain">Copywrite year TBD &copy; The Mountain Spoke , All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="scripts/tools.js"></script>
+
+</body>
+
+</html>

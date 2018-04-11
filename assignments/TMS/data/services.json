@@ -1,0 +1,52 @@
+{  
+      "id":1,
+      "type":"tune-up",
+      "tune-ups":[  
+         {  
+            "type":"Basic Tune-Up",
+            "price":"$39.99"
+         },
+         {  
+            "type":"Premium Tune-Up",
+            "price":"$69.99"
+         },
+         {  
+            "type":"Brake System Tune-Up",
+            "price":"$24.99"
+         },
+         {  
+            "type":"Drivetrain Tune-Up",
+            "price":"$24.99"
+         },
+         {  
+            "type":"Bike Build",
+            "price":"$39.99"
+         }
+      ]
+   ,
+      "id":2;
+      "type":"install",
+      "installs":[  
+         {  
+            "type":"Child Carrier",
+            "price":"$14.99"
+         },
+         {  
+            "type":"Cycle Computer",
+            "price":"$9.99"
+         },
+         {  
+            "type":"Fenders",
+            "price":"$12.99"
+         },
+         {  
+            "type":"Kickstand",
+            "price":"$1.99"
+         },
+         {  
+            "type":"Saddle",
+            "price":"$1.99"
+         }
+      ]
+       
+}

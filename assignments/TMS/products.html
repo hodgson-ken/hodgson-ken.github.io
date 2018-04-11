@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Ken Hodgson">
+    <meta name="description" content="Lots of stuff">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- all views -->
+    <link href="styles/styles.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <div class="contain">
+            <a href="index.html">
+                <img src="images/logo-400w.png" class="logo">
+            </a>
+            <nav>
+                <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+                <ul class="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="tours.html">Adventure Tours</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contain">
+
+            <!-- Tab links -->
+            <section class="tab">
+                <button class="tablinks" onclick="openCategory(event, 'bikes')" id="defaultOpen">Bikes</button>
+                <button class="tablinks" onclick="openCategory(event, 'bike-parts')">Bike Parts</button>
+                <button class="tablinks" onclick="openCategory(event, 'equipment')">Equipment</button>
+            </section>
+
+            <!-- Tab content -->
+            <section id="bikes" class="tabcontent">
+                <h2>Bikes</h2>
+                <div class="accordion">
+
+                    <h4 class="accordion-header"><a href="">Norco - Nitro</a></h4>
+                    <div class="product">
+                        <div><img src="images/norco-nitro.png">
+                        </div>
+                        <div class="product-desc">
+                            <h3>Nitro</h3>
+                             <h4>Features:</h4>
+                            <p>This is the bike of your dreams. It is an amazing work of art. I can't believe you don't own one.</p>
+                            <h4>Specifications:</h4>
+                            <ul>
+                            <li>this</li>
+                            <li>this</li>
+                            <li>this</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4 class="accordion-header"><a href="">Trek - Marlin 5</a></h4>
+                    <div class="product">
+                        <div><img src="images/trek-marlin-5.png">
+                        </div>
+                        <div class="product-desc">
+                            <h3>Marlin 5</h3>
+                            <h4>Features:</h4>
+                            <p>This is the bike of your dreams. It is an amazing work of art. I can't believe you don't own one.</p>
+                            <h4>Specifications:</h4>
+                            <ul>
+                            <li>this</li>
+                            <li>this</li>
+                            <li>this</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4 class="accordion-header"><a href="">Trek - 820</a></h4>
+                    <div class="product">
+                        <div><img src="images/trek-820.png">
+                        </div>
+                        <div class="product-desc">
+                            <h3>820</h3>
+                            <h4>Features:</h4>
+                            <p>This is the bike of your dreams. It is an amazing work of art. I can't believe you don't own one.</p>
+                            <h4>Specifications:</h4>
+                            <ul>
+                            <li>this</li>
+                            <li>this</li>
+                            <li>this</li>
+                            </ul>
+                            <button class="add-button">Purchase: $379.99</button>
+                        </div>
+                    </div>
+
+                    <h4 class="accordion-header"><a href="">Trek - Roscoe 8</a></h4>
+                    <div class="product">
+                        <div><img src="images/trek-roscoe-8.png">
+                        </div>
+                        <div class="product-desc">
+                            <h3>Roscoe 8</h3>
+                            <h4>Features:</h4>
+                            <p>This is the bike of your dreams. It is an amazing work of art. I can't believe you don't own one.</p>
+                            <h4>Specifications:</h4>
+                            <ul>
+                            <li>this</li>
+                            <li>this</li>
+                            <li>this</li>
+                            </ul>
+                            <button class="add-button">Purchase: $1,259.99</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="bike-parts" class="tabcontent">
+                <h2>Bike Parts</h2>
+                <p>Sell parts</p>
+            </section>
+
+            <section id="equipment" class="tabcontent">
+                <h2>Equipment</h2>
+                <p>More to come</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contain">
+            <aside class="footer-divs">
+                <div class="map">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611047!2d-111.09290618443556!3d45.67227287910392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1522727119552" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p>The Mountain Spoke</p>
+                    <p>3950 Valley Commons Drive</p>
+                    <p>Bozeman, MT 59718</p>
+                    <p>Phone: 888-123-4567</p>
+                    <p>Email: info@themountainspoke.com</p>
+                </div>
+                <div class="contact-form">
+                    <form action="thanks.html" enctype="multipart/form-data" name="contactUs">
+                        <h3>Request Info</h3>
+                        <input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required>
+                        <input name="email" type="email" placeholder="johnsmith@gmail.com">
+                        <input name="phone" type="tel" placeholder="Tel: 000-000-0000" required>
+                        <textarea rows="2" placeholder="Message:"></textarea>
+                        <input type="submit" value="Send" class="submitBtn">
+                    </form>
+                </div>
+            </aside>
+
+        </div>
+        <div class="footer-bar">
+            <p class="contain">Copywrite year TBD &copy; The Mountain Spoke , All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="scripts/tools.js"></script>
+
+</body>
+
+</html>
