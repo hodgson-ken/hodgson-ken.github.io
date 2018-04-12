@@ -204,10 +204,9 @@ form {
     padding: .5rem;
 }
 
-.video {
-    margin: 0 auto;
+div.center {
+    text-align: center;
 }
-
 /**********************Tabbed Sections*****************************/
 
 /* Style the tab */
