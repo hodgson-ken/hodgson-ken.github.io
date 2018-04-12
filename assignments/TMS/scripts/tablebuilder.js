@@ -35,6 +35,7 @@ function loadPrices(jsonObj) {
             var newRow = document.createElement('tr');
             var newColA = document.createElement('td');
             var newColB = document.createElement('td');
+                newColB.className = "price-column";
             myBody.appendChild(newRow);
             newRow.appendChild(newColA);
             newColA.textContent = taskPrices[j].task;

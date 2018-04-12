@@ -29,8 +29,8 @@
                 <ul class="primaryNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="tours.html">Adventure Tours</a></li>
                 </ul>
             </nav>
@@ -40,15 +40,6 @@
     <main>
         <div class="contain">
 
-            <!--          <section class="banner box">
-                <div class="text-overlay">
-                    <h1>What are you waiting for?</h1>
-                </div>
-                <div class="action-button">
-                    <button class="banner-button">Next Event: Ride the Divide!</button>
-                </div>
-            </section>
- -->
             <!-- Tab links -->
             <section class="tab">
                 <button class="tablinks" onclick="openCategory(event, 'tours')" id="defaultOpen">Tours</button>
@@ -63,6 +54,7 @@
                         <a href="#">
                             <img src="images/tour-lakeside-highlight.jpg">
                             <h3>Lakeside Tour (All Riders - Easy)</h3>
+                            <h4>Cost: $35</h4>
                             <p>Easy riding.  Beautiful Landscapes.</p>
                         </a>
                     </div>
@@ -70,6 +62,7 @@
                         <a href="#">
                             <img src="images/tour-deepwoods-highlight.jpg">
                             <h3>Deepwoods Tour (Experienced)</h3>
+                            <h4>Cost: $45</h4>
                             <p>Lots of climbing. Lots of speed.</p>
                         </a>
                     </div>
@@ -79,7 +72,8 @@
 
             <section id="schedule" class="tabcontent">
                 <h2>Schedule</h2>
-                <p>stuff</p>
+                <p>We offer steady tour dates from June to September.</p>
+                <p>Tours are every Saturday starting at 10:00am.  Be here by 9:00am for orientation and gear fitting.</p>
             </section>
 
         </div>
@@ -115,12 +109,12 @@
 
         </div>
         <div class="footer-bar">
-            <p class="contain">Copywrite year TBD &copy; The Mountain Spoke , All Rights Reserved</p>
+            <p class="contain">Copywrite &copy; <span id="currentYear"></span> The Mountain Spoke , All Rights Reserved</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="scripts/nav-tools.js"></script>
-
+    <script src="scripts/tabs-accordion.js"></script>
 </body>
 
 </html>

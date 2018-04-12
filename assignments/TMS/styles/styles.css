@@ -186,6 +186,28 @@ main .box {
     text-decoration: none;
 }
 
+p.clear {
+    clear: both;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    padding:  .5rem 1rem;
+}
+
+form {
+    max-width: 100%;
+    align-content: center;
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+.video {
+    margin: 0 auto;
+}
+
 /**********************Tabbed Sections*****************************/
 
 /* Style the tab */
@@ -282,12 +304,46 @@ main .box {
 .table-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px auto;
 }
 
-.services-table {
-    border: solid blue .5px;
-    /*testing*/
+table {
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px gray;
+}
+
+table,
+th,
+td {
+    padding: .5rem;
+}
+
+.services-table tr {
+    display: flex;
+}
+
+.services-table td {
+    flex: 1;
+}
+
+.price-column {
+    text-align: right;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed
+}
+
+dl, dt {
+    padding: .5rem;
+    margin: .5rem;
 }
 
 /******************************************************************/
@@ -416,7 +472,10 @@ input.submitBtn:hover,
         flex-direction: row;
     }
     .services-table {
-               width: 48%;
+        width: 49%;
+    }
+    form {
+        max-width: 600px;
     }
 }
 
